@@ -88,12 +88,12 @@ function lowest_delay_crossing(wires)
 end
 
 function part_1(inputstring)
-    wires = split(input, "\n"; keepempty=false) .|> to_vertices
+    wires = split(inputstring, "\n"; keepempty=false) .|> to_vertices
     closest_crossing(wires)
 end
 
 function part_2(inputstring)
-    wires = split(input, "\n"; keepempty=false) .|> to_vertices
+    wires = split(inputstring, "\n"; keepempty=false) .|> to_vertices
     lowest_delay_crossing(wires)
 end
 
